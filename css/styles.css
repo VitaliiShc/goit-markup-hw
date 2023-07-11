@@ -74,6 +74,10 @@ img {
   justify-content: space-between;
 }
 
+.logo-header {
+  margin-right: 76px;
+}
+
 .logo-header,
 .logo-footer {
   font-family: var(--logo-font);
@@ -83,7 +87,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
 }
 
 .logo-header-accent {
@@ -276,7 +279,6 @@ img {
 
 .team-card {
   background: var(--white);
-  padding-bottom: 32px;
   border-radius: 0px 0px 4px 4px;
 }
 
