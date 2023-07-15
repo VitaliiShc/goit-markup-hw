@@ -1,4 +1,8 @@
 :root {
+  /* Typography */
+  --primary-font: 'Roboto', sans-serif;
+  --logo-font: 'Raleway', sans-serif;
+
   /* Colors */
   --iris: #4d5ae5;
   --ocean: #404bbf;
@@ -12,14 +16,10 @@
   --grey: #2e2f42;
   --white: #ffffff;
   --dairy: #fcfcfc;
-
-  /* Typography */
-  --primary-font: 'Roboto', sans-serif;
-  --logo-font: 'Raleway', sans-serif;
 }
 
 body {
-  background: var(--white);
+  background-color: var(--white);
   font-family: var(--primary-font);
   color: var(--slate);
   line-height: 1.5;
@@ -47,11 +47,11 @@ img {
   height: auto;
 }
 
-.link {
+a {
   text-decoration: none;
 }
 
-.list {
+ul {
   list-style-type: none;
 }
 
@@ -63,11 +63,12 @@ img {
   margin: 0 auto;
 }
 
-/* Header and Footer */
+/* ----- Header and Footer ----- */
 
 .header {
   border-bottom: 1px solid var(--cornflower);
 }
+
 .header-container {
   display: flex;
   align-items: center;
@@ -127,11 +128,16 @@ img {
   letter-spacing: 0.02em;
   font-style: normal;
 }
+
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
-  background: var(--navyblue);
+  background-color: var(--navyblue);
   color: var(--cloud);
+}
+
+.footer-container {
+  display: flex;
 }
 
 .logo-footer {
@@ -143,12 +149,50 @@ img {
   color: var(--cloud);
 }
 
-.footer-paragraph {
+.footer-tagline-paragraph {
   letter-spacing: 0.02em;
   width: 264px;
 }
 
-/* Index Main */
+.footer-social-media {
+  margin-left: 120px;
+}
+
+.footer-socials-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-socials-item {
+}
+
+.footer-social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--iris);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.footer-social-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--cloud);
+}
+
+.footer-social-link:hover {
+  background-color: var(--ocean);
+}
+
+.footer-media-paragraph {
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+/* ----- Index Main ----- */
 
 .section-title {
   color: var(--grey);
@@ -174,29 +218,17 @@ img {
   overflow: hidden;
 }
 
-.team-name,
-.features-title,
-.portfolio-title {
-  color: var(--navyblue);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  margin-bottom: 8px;
-}
-
-.feature-description,
-.team-role,
-.portfolio-type {
-  color: var(--slate);
-  letter-spacing: 0.02em;
-}
-
-/* ---- Hero */
+/* ----- Hero ----- */
 
 .hero-section {
-  background: var(--navyblue);
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-size: cover;
+  margin: 0 auto;
 }
 
 .hero-container {
@@ -217,7 +249,7 @@ img {
 }
 
 .hero-button {
-  background: var(--iris);
+  background-color: var(--iris);
   font-family: 'Roboto', sans-serif;
   padding: 16px 32px;
   font-weight: 500;
@@ -233,14 +265,43 @@ img {
 
 .hero-button:hover,
 .hero-button:focus {
-  background: var(--ocean);
+  background-color: var(--ocean);
 }
 
-/* ---- Features */
+/* ----- Features ----- */
 
 .features-section {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.features-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: calc((100% - 24px * 3) / 4);
+}
+
+.feature-img {
+  height: 112px;
+  border-radius: 4px;
+  background-color: var(--cloud);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-title {
+  color: var(--navyblue);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.feature-description {
+  color: var(--slate);
+  letter-spacing: 0.02em;
 }
 
 .features-list {
@@ -248,15 +309,12 @@ img {
   gap: 24px;
 }
 
-.features-item {
-  width: calc((100% - 24px * 3) / 4);
-}
-
-/* ---- What are we doing */
+/* ----- What are we doing ----- */
 
 .wawdoing-section {
   padding-bottom: 120px;
 }
+
 .wawdoing-list {
   display: flex;
   gap: 24px;
@@ -266,9 +324,9 @@ img {
   max-width: calc((100% - 24px * 2) / 3);
 }
 
-/* ---- Team */
+/* ----- Team ----- */
 .team-section {
-  background: var(--cloud);
+  background-color: var(--cloud);
   padding: 120px 0;
 }
 
@@ -278,20 +336,87 @@ img {
 }
 
 .team-card {
-  background: var(--white);
+  background-color: var(--white);
   border-radius: 0px 0px 4px 4px;
 }
 
 .team-card-description {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
   padding: 32px 16px;
 }
 
-.team-name,
-.team-role {
-  text-align: center;
+.team-name {
+  color: var(--navyblue);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
-/* Portfolio Main */
+.team-role {
+  color: var(--slate);
+  letter-spacing: 0.02em;
+}
+
+.team-socials-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-socials-item {
+}
+
+.team-social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--iris);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.team-social-link:hover {
+  background-color: var(--ocean);
+}
+
+.team-social-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--cloud);
+}
+
+/* ----- Customers ----- */
+
+.customers-section {
+  padding: 120px 0;
+}
+
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customer-item {
+  width: 168px;
+  height: 88px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: 1px solid var(--lightslate);
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.customer-icon {
+  fill: var(--lightslate);
+}
+
+/* ----- Portfolio Main ----- */
 
 .portfolio-section {
   padding-top: 96px;
@@ -307,7 +432,7 @@ img {
 
 .filters-button {
   font-family: 'Roboto', sans-serif;
-  background: var(--cloud);
+  background-color: var(--cloud);
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.04em;
@@ -323,7 +448,7 @@ img {
 .filters-button:focus,
 .filters-button:active {
   color: var(--white);
-  background: var(--ocean);
+  background-color: var(--ocean);
   border: 1px solid transparent;
 }
 
@@ -335,6 +460,20 @@ img {
 
 .portfolio-card {
   width: calc((100% - 24px * 2) / 3);
+}
+
+.portfolio-title {
+  color: var(--navyblue);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.portfolio-type {
+  color: var(--slate);
+  letter-spacing: 0.02em;
 }
 
 .portfolio-description {
