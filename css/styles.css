@@ -255,6 +255,7 @@ ul {
   padding: 188px 0;
   background-image: linear-gradient(var(--navyblue-bg), var(--navyblue-bg)),
     url(../images/hero-bg-image.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1440px;
