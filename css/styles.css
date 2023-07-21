@@ -813,7 +813,6 @@ ul {
   border-radius: 2px;
   border: 1px solid var(--navyblue-modal);
   margin-right: 8px;
-  display: flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
