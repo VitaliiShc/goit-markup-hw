@@ -124,6 +124,7 @@ ul {
 }
 
 .header-nav-link {
+  display: block;
   color: var(--navyblue);
   font-weight: 500;
   letter-spacing: 0.02em;
