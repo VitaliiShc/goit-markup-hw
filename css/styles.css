@@ -201,8 +201,7 @@ ul {
 
 .footer-subtitle {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
+
   letter-spacing: 0.02em;
   color: var(--white);
   margin-bottom: 16px;
@@ -283,7 +282,6 @@ ul {
   justify-content: center;
   align-items: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -352,7 +350,6 @@ ul {
   font-family: 'Roboto', sans-serif;
   padding: 16px 32px;
   font-weight: 500;
-  font-size: 16px;
   color: var(--white);
   letter-spacing: 0.04em;
   min-width: 169px;
@@ -541,7 +538,6 @@ ul {
   font-family: 'Roboto', sans-serif;
   background-color: var(--cloud);
   font-weight: 500;
-  font-size: 16px;
   letter-spacing: 0.04em;
   text-align: center;
   color: var(--iris);
@@ -609,7 +605,6 @@ ul {
   top: 0;
   left: 0;
   color: var(--cloud);
-  line-height: 1.5;
   letter-spacing: 0.02em;
   background-color: var(--iris);
   height: 100%;
@@ -705,7 +700,6 @@ ul {
   color: var(--navyblue);
   text-align: center;
   font-weight: 500;
-  line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
@@ -844,7 +838,6 @@ ul {
   background-color: var(--iris);
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 16px;
   color: var(--white);
   line-height: 1.5;
   letter-spacing: 0.04em;
