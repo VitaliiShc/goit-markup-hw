@@ -44,7 +44,6 @@ ul {
 
 img {
   display: block;
-  height: auto;
 }
 
 a {
@@ -226,6 +225,8 @@ ul {
 }
 
 .footer-social-icon {
+  width: 24px;
+  height: 24px;
   fill: var(--cloud);
 }
 
@@ -294,6 +295,8 @@ ul {
 }
 
 .footer-subcribe-btn-icon {
+  width: 24px;
+  height: 24px;
   margin-left: 16px;
   fill: var(--white);
 }
@@ -320,12 +323,12 @@ ul {
 .hero-section {
   padding: 112px 0;
   background-image: linear-gradient(var(--navyblue-bg), var(--navyblue-bg)),
-    url(../images/hero-bg-image.jpg);
+    url(../images/hero-bgimage-mob.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  max-width: 1440px;
+  max-width: 428px;
   margin: 0 auto;
 }
 
@@ -413,6 +416,12 @@ ul {
   max-width: calc((100% - 24px * 2) / 3);
 }
 
+.wawdoing-item-img {
+  width: 360px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 /* ----- Team ----- */
 .team-section {
   background-color: var(--cloud);
@@ -432,6 +441,12 @@ ul {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team-card-img {
+  height: 260px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .team-card-description {
@@ -480,6 +495,8 @@ ul {
 }
 
 .team-social-icon {
+  width: 16px;
+  height: 16px;
   fill: var(--cloud);
 }
 
@@ -601,7 +618,8 @@ ul {
 }
 
 .portfolio-card-img {
-  width: 100%;
+  max-width: 396px;
+  height: 280px;
   margin: 0 auto;
 }
 
@@ -750,6 +768,8 @@ ul {
 }
 
 .order-input-icon {
+  width: 16px;
+  height: 24px;
   position: absolute;
   left: 16px;
   top: 50%;
@@ -803,6 +823,8 @@ ul {
 }
 
 .check {
+  width: 10px;
+  height: 8px;
 }
 
 .order-checkbox-label {
