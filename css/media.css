@@ -14,6 +14,12 @@
     max-width: 768px;
   }
 
+  .header-nav-list,
+  .header-addr-list {
+    display: flex;
+    gap: 40px;
+  }
+
   .hero-section {
     padding: 112px 0;
     background-image: linear-gradient(var(--navyblue-bg), var(--navyblue-bg)),
