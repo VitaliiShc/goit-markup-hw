@@ -41,7 +41,6 @@
             </li>
           </ul>
         </nav>
-
         <address class="address">
           <ul class="header-addr-list">
             <li class="header-addr-item">
@@ -59,11 +58,111 @@
             </li>
           </ul>
         </address>
-        <a class="mob-menu">
-          <svg class="mob-menu-icon">
+
+        <button type="button" class="mob-menu-open-btn" data-menu-open>
+          <svg class="mob-menu-open-icon">
             <use href="./images/icons.svg#mob-menu"></use>
           </svg>
-        </a>
+        </button>
+      </div>
+
+      <div class="mob-menu is-hidden" data-menu>
+        <button class="mob-menu-close-btn" type="button" data-menu-close>
+          <svg class="mob-menu-close-icon">
+            <use href="./images/icons.svg#close-modal"></use>
+          </svg>
+        </button>
+
+        <nav class="mob-nav">
+          <ul class="mob-nav-list">
+            <li class="mob-nav-item">
+              <a class="mob-nav-link" href="./index.html">Studio</a>
+            </li>
+            <li class="mob-nav-item">
+              <a class="mob-nav-link current" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-nav-item">
+              <a class="mob-nav-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mob-contacts">
+          <address class="mob-address">
+            <ul class="mob-addr-list">
+              <li class="mob-addr-item">
+                <a class="mob-addr-tel" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-addr-item">
+                <a
+                  class="mob-addr-mail"
+                  href="mailto:info@devstudio.com"
+                  target="_blank"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mob-socials-list">
+            <li class="mob-socials-item">
+              <a
+                class="mob-social-link"
+                href="#"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-social-icon">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-socials-item">
+              <a
+                class="mob-social-link"
+                href="#"
+                aria-label="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-social-icon">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-socials-item">
+              <a
+                class="mob-social-link"
+                href="#"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="footer-social-icon">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-socials-item">
+              <a
+                class="mob-social-link"
+                href="#"
+                aria-label="Linkedin"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-social-icon">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -575,5 +674,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
