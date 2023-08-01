@@ -58,7 +58,7 @@ ul {
   max-width: 428px;
   padding: 0 16px;
   margin: 0 auto;
-  /* outline: 1px solid red; */
+  outline: 2px solid red;
 }
 
 .visually-hidden {
@@ -235,11 +235,14 @@ ul {
   color: var(--ocean);
 }
 
+.mob-address {
+  margin-bottom: 48px;
+}
+
 .mob-addr-list {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 48px;
 }
 
 .mob-addr-tel {
@@ -270,7 +273,7 @@ ul {
 
 .mob-socials-list {
   display: flex;
-  gap: 56px;
+  gap: calc((100vw - 40px * 4 - 40px * 2) / 3);
 }
 
 .mob-social-link {
@@ -318,7 +321,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  max-width: 428px;
+  max-height: 432px;
   margin: 0 auto;
 }
 
