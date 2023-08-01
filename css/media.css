@@ -1,3 +1,33 @@
+@media screen and (max-width: 428px) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(var(--navyblue-bg), var(--navyblue-bg)),
+        url(../images/hero-bgimage-mob-2x.jpg);
+    }
+  }
+  .modal-order {
+    width: 100vw;
+    max-width: 392px;
+  }
+  .order-title {
+    font-size: 12px;
+  }
+
+  .order-checkbox-label {
+    font-size: 9px;
+  }
+
+  .policy-link {
+    font-size: 12px;
+  }
+
+  .mob-addr-tel {
+    font-size: 28px;
+  }
+}
+
 @media screen and (min-width: 428px) {
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -6,6 +36,10 @@
       background-image: linear-gradient(var(--navyblue-bg), var(--navyblue-bg)),
         url(../images/hero-bgimage-mob-2x.jpg);
     }
+  }
+
+  .mob-socials-list {
+    gap: 56px;
   }
 }
 
@@ -80,7 +114,8 @@
     padding: 112px 0;
     background-image: linear-gradient(var(--navyblue-bg), var(--navyblue-bg)),
       url(../images/hero-bgimage-tab.jpg);
-    max-width: 768px;
+    /* max-width: 768px; */
+    max-height: 436px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -224,6 +259,7 @@
     background-image: linear-gradient(var(--navyblue-bg), var(--navyblue-bg)),
       url(../images/hero-bgimage-dt.jpg);
     max-width: 1440px;
+    max-height: 600px;
   }
 
   @media (min-device-pixel-ratio: 2),
