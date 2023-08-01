@@ -58,7 +58,7 @@ ul {
   max-width: 428px;
   padding: 0 16px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .visually-hidden {
@@ -364,8 +364,7 @@ ul {
 /* ----- Features ----- */
 
 .features-section {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding: 96px 0;
 }
 
 .features-list {
@@ -539,8 +538,7 @@ ul {
 /* ----- Portfolio Main ----- */
 
 .portfolio-section {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding: 48px 0;
 }
 
 .portfolio-filters {
@@ -651,8 +649,7 @@ ul {
 /* ----- Footer ----- */
 
 .footer {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding: 96px 0;
   background-color: var(--navyblue);
   color: var(--cloud);
 }
