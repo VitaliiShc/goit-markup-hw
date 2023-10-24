@@ -40,6 +40,7 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  list-style-type: none;
 }
 
 img {
@@ -48,10 +49,6 @@ img {
 
 a {
   text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
 }
 
 .container {
@@ -575,14 +572,13 @@ ul {
 
 .portfolio-list {
   display: flex;
-  row-gap: 48px;
   flex-wrap: wrap;
+  row-gap: 48px;
 }
 
 .portfolio-card {
   width: calc(100vw - 16px * 2);
   max-width: 396px;
-  width: 100%;
   border: 1px solid var(--cloud);
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -999,12 +995,7 @@ ul {
   text-decoration-line: underline;
 }
 
-.order-button {
-  display: flex;
-  justify-content: center;
-}
-
-.order-semd-btn {
+.order-send-btn {
   display: block;
   margin: 0 auto;
   background-color: var(--iris);
@@ -1021,6 +1012,6 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.order-semd-btn:is(:hover, :focus) {
+.order-send-btn:is(:hover, :focus) {
   background-color: var(--ocean);
 }
